@@ -1,0 +1,10 @@
+{
+  "name": "servicechain-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Henry Will",
+  "license": "MIT",
+  "dependencies": {
+    "@klaytn/contracts": "1.0.2"
+  }
+}
