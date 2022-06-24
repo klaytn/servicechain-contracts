@@ -18,10 +18,10 @@
 
 pragma solidity ^0.8.0;
 
-import "../klaytn-contracts/contracts/token/ERC20/ERC20.sol";
-import "../klaytn-contracts/contracts/utils/Address.sol";
-import "../klaytn-contracts/contracts/access/Ownable.sol";
-import "../bridge_interface/IERC20BridgeReceiver.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC20/ERC20.sol";
+import "../../node_modules/@klaytn/contracts/utils/Address.sol";
+import "../../node_modules/@klaytn/contracts/access/Ownable.sol";
+import "../interface/IERC20BridgeReceiver.sol";
 
 /**
  * @title ERC20ServiceChain

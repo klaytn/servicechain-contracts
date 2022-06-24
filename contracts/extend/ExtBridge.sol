@@ -20,7 +20,7 @@ pragma solidity ^0.8.0;
 
 import "../bridge/BridgeTransferERC20.sol";
 import "../bridge/BridgeTransferERC721.sol";
-import "./callback.sol";
+import "./Callback.sol";
 
 
 // ExtBridge is an extended bridge contract example inherited by BridgeTransferERC20 and BridgeTransferERC721.

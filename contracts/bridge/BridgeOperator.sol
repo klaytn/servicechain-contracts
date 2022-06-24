@@ -18,8 +18,8 @@
 
 pragma solidity ^0.8.0;
 
-import "../klaytn-contracts/contracts/token/ERC20/IERC20.sol";
-import "../klaytn-contracts/contracts/access/Ownable.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC20/IERC20.sol";
+import "../../node_modules/@klaytn/contracts/access/Ownable.sol";
 
 abstract contract BridgeOperator is Ownable {
     struct VotesData {

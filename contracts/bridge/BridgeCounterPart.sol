@@ -18,7 +18,7 @@
 
 pragma solidity ^0.8.0;
 
-import "../klaytn-contracts/contracts/access/Ownable.sol";
+import "../../node_modules/@klaytn/contracts/access/Ownable.sol";
 
 contract BridgeCounterPart is Ownable {
     address public counterpartBridge;

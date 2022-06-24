@@ -18,10 +18,10 @@
 
 pragma solidity ^0.8.0;
 
-import "../klaytn-contracts/contracts/token/ERC20/ERC20.sol";
-import "../klaytn-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol";
-import "../klaytn-contracts/contracts/access/AccessControl.sol";
-import "../klaytn-contracts/contracts/utils/Address.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC20/ERC20.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "../../node_modules/@klaytn/contracts/access/AccessControl.sol";
+import "../../node_modules/@klaytn/contracts/utils/Address.sol";
 
 import "./ERC20ServiceChain.sol";
 

@@ -5,6 +5,7 @@
   "author": "Henry Will",
   "license": "MIT",
   "dependencies": {
-    "@klaytn/contracts": "1.0.2"
+    "@klaytn/contracts": "1.0.2",
+    "truffle": "^5.5.19"
   }
 }

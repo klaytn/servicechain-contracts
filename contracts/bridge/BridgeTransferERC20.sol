@@ -18,10 +18,10 @@
 
 pragma solidity ^0.8.0;
 
-import "../klaytn-contracts/contracts/token/ERC20/IERC20.sol";
-import "../klaytn-contracts/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC20/IERC20.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
-import "../bridge_interface/IERC20BridgeReceiver.sol";
+import "../interface/IERC20BridgeReceiver.sol";
 import "./BridgeTransfer.sol";
 
 abstract contract BridgeTransferERC20 is BridgeTokens, IERC20BridgeReceiver, BridgeTransfer {

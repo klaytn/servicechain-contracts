@@ -18,11 +18,11 @@
 
 pragma solidity ^0.8.0;
 
-import "../klaytn-contracts/contracts/token/ERC721/ERC721.sol";
-import "../klaytn-contracts/contracts/token/ERC721/extensions/ERC721Burnable.sol";
-import "../klaytn-contracts/contracts/access/AccessControl.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC721/ERC721.sol";
+import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+import "../../node_modules/@klaytn/contracts/access/AccessControl.sol";
 
-import "../sc_erc721/ERC721ServiceChain.sol";
+import "./ERC721ServiceChain.sol";
 
 contract ServiceChainNFT_NoURI is ERC721, ERC721Burnable, AccessControl, ERC721ServiceChain {
     string public constant NAME = "ServiceChainNFT";
