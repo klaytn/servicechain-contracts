@@ -1,0 +1,11 @@
+# Intellij
+.idea
+
+# node
+node_modules
+
+# truffle compile
+build
+
+# yarn
+yarn-error.log

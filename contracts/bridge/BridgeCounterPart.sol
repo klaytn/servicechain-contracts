@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 // Copyright 2019 The klaytn Authors
 // This file is part of the klaytn library.
 //
@@ -14,14 +16,17 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the klaytn library. If not, see <http://www.gnu.org/licenses/>.
 
-package contracts
+pragma solidity ^0.8.0;
 
-//go:generate abigen --sol ./contracts/bridge/Bridge.sol --pkg bridge --out ./bridge/Bridge.go
+import "../../node_modules/@klaytn/contracts/access/Ownable.sol";
 
-//go:generate abigen --sol ./contracts/extend/ExtBridge.sol --pkg extbridge --out ./extbridge/ExtBridge.go
+contract BridgeCounterPart is Ownable {
+    address public counterpartBridge;
 
-//go:generate abigen --sol ./contracts/erc721/ServiceChainNFT.sol --pkg erc721 --out ./tokens/erc721/ServiceChainNFT.go
-
-//go:generate abigen --sol ./contracts/erc20/ServiceChainToken.sol --pkg erc20 --out ./tokens/erc20/ServiceChainToken.go
-
-//go:generate abigen --sol ./contracts/kip13/InterfaceIdentifier.sol --pkg kip13 --out ./tokens/kip13/InterfaceIdentifier.go
+    function setCounterPartBridge(address _bridge)
+        external
+        onlyOwner
+    {
+        counterpartBridge = _bridge;
+    }
+}

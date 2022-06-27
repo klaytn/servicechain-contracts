@@ -1,0 +1,11 @@
+{
+  "name": "servicechain-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Henry Will",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@klaytn/contracts": "1.0.2",
+    "truffle": "^5.5.19"
+  }
+}
