@@ -16,16 +16,12 @@
 
 package contracts
 
-//go:generate abigen --sol ./bridge/Bridge.sol --pkg bridge --out ./bridge/Bridge.go
-//go:generate abigen --sol ./extbridge/ext_bridge.sol --pkg extbridge --out ./extbridge/ext_bridge.go
+//go:generate abigen --sol ./contracts/bridge/Bridge.sol --pkg bridge --out ./bridge/Bridge.go
 
-//go:generate abigen --sol ./sc_erc721/sc_nft.sol --pkg scnft --out ./sc_erc721/sc_nft.go
-//go:generate abigen --sol ./sc_erc721_no_uri/sc_nft_no_uri.sol --pkg scnft_no_uri --out ./sc_erc721_no_uri/sc_nft_no_uri.go
+//go:generate abigen --sol ./contracts/extend/ExtBridge.sol --pkg extbridge --out ./extbridge/ExtBridge.go
 
-//go:generate abigen --sol ./sc_erc20/sc_token.sol --pkg sctoken --out ./sc_erc20/sc_token.go
+//go:generate abigen --sol ./contracts/erc721/ServiceChainNFT.sol --pkg erc721 --out ./erc721/ServiceChainNFT.go
 
-//go:generate abigen --sol ./kip13/InterfaceIdentifier.sol --pkg kip13 --out ./kip13/InterfaceIdentifier.go
+//go:generate abigen --sol ./contracts/erc20/ServiceChainToken.sol --pkg erc20 --out ./erc20/ServiceChainToken.go
 
-//`credit.sol` was compiled by solidity@0.4.24.
-// This code data was included in cypress genesis file.
-////go:generate abigen --sol ./cypress/credit.sol --pkg cypress --out ./cypress/credit.go
+//go:generate abigen --sol ./contracts/kip13/InterfaceIdentifier.sol --pkg kip13 --out ./kip13/InterfaceIdentifier.go
