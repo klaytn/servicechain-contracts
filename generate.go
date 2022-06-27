@@ -20,8 +20,8 @@ package contracts
 
 //go:generate abigen --sol ./contracts/extend/ExtBridge.sol --pkg extbridge --out ./extbridge/ExtBridge.go
 
-//go:generate abigen --sol ./contracts/erc721/ServiceChainNFT.sol --pkg erc721 --out ./erc721/ServiceChainNFT.go
+//go:generate abigen --sol ./contracts/erc721/ServiceChainNFT.sol --pkg erc721 --out ./tokens/erc721/ServiceChainNFT.go
 
-//go:generate abigen --sol ./contracts/erc20/ServiceChainToken.sol --pkg erc20 --out ./erc20/ServiceChainToken.go
+//go:generate abigen --sol ./contracts/erc20/ServiceChainToken.sol --pkg erc20 --out ./tokens/erc20/ServiceChainToken.go
 
-//go:generate abigen --sol ./contracts/kip13/InterfaceIdentifier.sol --pkg kip13 --out ./kip13/InterfaceIdentifier.go
+//go:generate abigen --sol ./contracts/kip13/InterfaceIdentifier.sol --pkg kip13 --out ./tokens/kip13/InterfaceIdentifier.go
