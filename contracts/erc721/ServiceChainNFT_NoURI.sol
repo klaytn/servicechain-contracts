@@ -29,7 +29,7 @@ contract ServiceChainNFT_NoURI is ERC721, ERC721Burnable, AccessControl, ERC721S
     string public constant SYMBOL = "SCN";
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
-    constructor(address _bridge) ERC721(NAME, SYMBOL) ERC721ServiceChain(_bridge) public {
+    constructor(address _bridge) ERC721(NAME, SYMBOL) ERC721ServiceChain(_bridge) {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(MINTER_ROLE, msg.sender);
     }
