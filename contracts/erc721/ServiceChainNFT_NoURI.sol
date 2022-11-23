@@ -18,9 +18,9 @@
 
 pragma solidity ^0.8.0;
 
-import "../../node_modules/@klaytn/contracts/token/ERC721/ERC721.sol";
-import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
-import "../../node_modules/@klaytn/contracts/access/AccessControl.sol";
+import "@klaytn/contracts/token/ERC721/ERC721.sol";
+import "@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+import "@klaytn/contracts/access/AccessControl.sol";
 
 import "./ERC721ServiceChain.sol";
 
@@ -29,7 +29,7 @@ contract ServiceChainNFT_NoURI is ERC721, ERC721Burnable, AccessControl, ERC721S
     string public constant SYMBOL = "SCN";
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
-    constructor(address _bridge) ERC721(NAME, SYMBOL) ERC721ServiceChain(_bridge) public {
+    constructor(address _bridge) ERC721(NAME, SYMBOL) ERC721ServiceChain(_bridge) {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(MINTER_ROLE, msg.sender);
     }

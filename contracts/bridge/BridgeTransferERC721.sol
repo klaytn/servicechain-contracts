@@ -18,9 +18,9 @@
 
 pragma solidity ^0.8.0;
 
-import "../../node_modules/@klaytn/contracts/token/ERC721/IERC721.sol";
-import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+import "@klaytn/contracts/token/ERC721/IERC721.sol";
+import "@klaytn/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 
 import "../interface/IERC721BridgeReceiver.sol";
 import "./BridgeTransfer.sol";

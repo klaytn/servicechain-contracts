@@ -18,7 +18,7 @@
 
 pragma solidity ^0.8.0;
 
-import "../../node_modules/@klaytn/contracts/access/Ownable.sol";
+import "@klaytn/contracts/access/Ownable.sol";
 
 contract BridgeTokens is Ownable {
     mapping(address => address) public registeredTokens; // <token, counterpart token>

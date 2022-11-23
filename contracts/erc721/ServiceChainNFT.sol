@@ -18,12 +18,12 @@
 
 pragma solidity ^0.8.0;
 
-import "../../node_modules/@klaytn/contracts/token/ERC721/ERC721.sol";
-import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
-import "../../node_modules/@klaytn/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "../../node_modules/@klaytn/contracts/access/AccessControl.sol";
-import "../../node_modules/@klaytn/contracts/access/Ownable.sol";
+import "@klaytn/contracts/token/ERC721/ERC721.sol";
+import "@klaytn/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@klaytn/contracts/token/ERC721/extensions/ERC721Burnable.sol";
+import "@klaytn/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import "@klaytn/contracts/access/AccessControl.sol";
+import "@klaytn/contracts/access/Ownable.sol";
 
 import "./ERC721ServiceChain.sol";
 

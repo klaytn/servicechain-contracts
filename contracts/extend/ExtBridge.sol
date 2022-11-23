@@ -28,7 +28,7 @@ import "./Callback.sol";
 contract ExtBridge is BridgeTransferERC20, BridgeTransferERC721 {
     address public callback = address(0);
 
-    constructor(bool _modeMintBurn) BridgeTransfer(_modeMintBurn) public payable {
+    constructor(bool _modeMintBurn) BridgeTransfer(_modeMintBurn) payable {
     }
 
     function setCallback(address _addr) public onlyOwner {
